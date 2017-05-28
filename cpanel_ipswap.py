@@ -279,7 +279,7 @@ Remote %s
     overwriteFile(ifcfg_path+local_network.device, local_network.generatecConfig())
     overwriteFile(network_path, local_network.generateNetwork())
 
-    print('Overwriting configs on dst...')
+    print('Overwriting configs on src...')
 
     overwriteFile(ips_path, remote_network.extra_ips, sftp_client)
     overwriteFile(hosts_path, remote_network.generateHosts(), sftp_client)
